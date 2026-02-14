@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MCV - Mobile Car Valeting</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!-- ============================================ -->
+<!--                 Navigation                   -->
+<!-- ============================================ -->
+
+    <header id="cs-navigation">
+        <div class="cs-container">
+            <!--Nav Logo-->
+            <a href="" class="cs-logo" aria-label="back to home">
+                <img src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mcv-mobile-car-valeting-header-logo.webp.pagespeed.ce.sijBoQa1yG.webp" alt="logo" width="210" height="29" aria-hidden="true" decoding="async">
+            </a>
+            <!--Navigation List-->
+            <nav class="cs-nav" role="navigation">
+                <!--Mobile Nav Toggle-->
+                <button class="cs-toggle" aria-label="mobile menu toggle">
+                    <div class="cs-box" aria-hidden="true">
+                        <span class="cs-line cs-line1" aria-hidden="true"></span>
+                        <span class="cs-line cs-line2" aria-hidden="true"></span>
+                        <span class="cs-line cs-line3" aria-hidden="true"></span>
+                    </div>
+                </button>
+                <!-- We need a wrapper div so we can set a fixed height on the cs-ul in case the nav list gets too long from too many dropdowns being opened and needs to have an overflow scroll. This wrapper acts as the background so it can go the full height of the screen and not cut off any overflowing nav items while the cs-ul stops short of the bottom of the screen, which keeps all nav items in view no matter how mnay there are-->
+                <div class="cs-ul-wrapper">
+                    <ul id="cs-expanded" class="cs-ul" aria-expanded="false">
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link cs-active">
+                                Home
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                About
+                            </a>
+                        </li>
+                        <!--Copy and paste this cs-dropdown list item and replace any .cs-li with this cs-dropdown group to make a new dropdown and it will work-->
+                        <li class="cs-li cs-dropdown" tabindex="0">
+                            <span class="cs-li-link">
+                                Services
+                                <img class="cs-drop-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons/down-gold.svg" alt="dropdown icon" width="15" height="15" decoding="async" aria-hidden="true">
+                            </span>
+                            <ul class="cs-drop-ul">
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Wash & Wax</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Mini Valet</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Full Valet</a>
+                                </li>
+                                <li class="cs-drop-li">
+                                    <a href="" class="cs-li-link cs-drop-link">Car Detailing & Protection</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                Franchise
+                            </a>
+                        </li>
+                        <li class="cs-li">
+                            <a href="" class="cs-li-link">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <a href="" class="cs-button-solid cs-nav-button"><symbol id="icon-phone" viewBox="0 0 4 4">
+<path d="M22 20c-2 2-2 4-4 4s-4-2-6-4-4-4-4-6 2-2 4-4-4-8-6-8-6 6-6 6c0 4 4.109 12.109 8 16s12 8 16 8c0 0 6-4 6-6s-6-8-8-6z"></path>
+</symbol> Call Us</a>
+            <!--Dark Mode toggle, uncomment button code if you want to enable a dark mode toggle-->
+            <!-- <button id="dark-mode-toggle" aria-label="dark mode toggle">
+                <svg class="cs-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 480" style="enable-background:new 0 0 480 480" xml:space="preserve"><path d="M459.782 347.328c-4.288-5.28-11.488-7.232-17.824-4.96-17.76 6.368-37.024 9.632-57.312 9.632-97.056 0-176-78.976-176-176 0-58.4 28.832-112.768 77.12-145.472 5.472-3.712 8.096-10.4 6.624-16.832S285.638 2.4 279.078 1.44C271.59.352 264.134 0 256.646 0c-132.352 0-240 107.648-240 240s107.648 240 240 240c84 0 160.416-42.688 204.352-114.176 3.552-5.792 3.04-13.184-1.216-18.496z"/></svg>
+                <img class="cs-sun" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsun.svg" decoding="async" alt="moon" width="15" height="15">
+            </button> -->
+        </div>
+    </header>
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero-1160">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">The Best Valeting Service In Town</span>
+            <h1 class="cs-title">Beautifully Clean <br /> Every Time</h1>
+            <p class="cs-text">
+                We are the premier car valeting service in the United Kingdom.
+            </p>
+            <a href="" class="cs-button-solid">Explore Services</a>
+        </div>
+    </div>
+
+    <!--SVG V Graphic-->
+    <!-- <img class="cs-graphic" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/centered-v.svg" alt="graphic" width="1920" height="163" aria-hidden="true"> -->
+
+    <!-- Background Image, also BG Image is set in CSS at 1600px wide for parallax effect -->
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-uk-hero.webp">
+        <source media="(min-width: 601px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-uk-hero.webp">
+        <img decoding="async" src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-uk-hero.webp" alt="garage" width="2250" height="1500" aria-hidden="true">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   Reviews                    -->
+<!-- ============================================ -->
+
+<section id="reviews-1673">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Testimonials</span>
+            <h2 class="cs-title">Our Customer Reviews</h2>
+        </div>
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="https://lh3.googleusercontent.com/a-/ALV-UjUol_xKQXMd0v5oOwXOrsbLtxH4zPW8joDnfx4JvBzXDm9AqEN7=w40-h40-c-rp-mo-ba3-br100" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Alex Allingham
+                        <span class="cs-job">03/11/2025</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                    Great service all round, easy to book on the phone, helpful at picking out the correct package for your individual needs. Pete was extremely friendly & knowledgeable, my car looks & smells great now. Very happy with the whole experience.</p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99" loading="lazy">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="https://lh3.googleusercontent.com/a/ACg8ocL3Wac3MEp2p9kuo7DqkOieYpk6bnVj3DjCLFvpnq5uSRlRsw=w40-h40-c-rp-mo-br100" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Joy Mclaughlan
+                        <span class="cs-job">Founder of Yokoloko</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                    Fabulous job on my 10 Yr old citron. Looks like a brand new car. Many thanks to Pete</p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99" loading="lazy">
+            </li>
+            <li class="cs-item">
+                <div class="cs-flex-group">
+                    <picture class="cs-picture">
+                        <img class="cs-profile" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/MISC/ecomm-headshot2.jpeg" decoding="async" alt="profile" width="50" height="50" aria-hidden="true" loading="lazy">
+                    </picture>
+                    <span class="cs-name">
+                        Cameron Williamson
+                        <span class="cs-job">Founder of Yokoloko</span>
+                    </span>
+                </div>
+                <div class="wrapper">
+                    <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/yellow-stars.svg" alt="stars" width="96" height="16">
+                    <p class="cs-review">
+                    Stitch Consulting transformed our business strategy Their expert consultants provided ingenious insights that propelled us towards success. Their dedication and innovative solutions are truly commendable.
+                    </p>
+                </div>
+                <!--Quote Icon-->
+                <img class="cs-quote" aria-hidden="true" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Graphics/gray-quote.svg" decoding="async" alt="quote icon" width="120" height="99" loading="lazy">
+            </li>
+        </ul>
+    </div>
+    <picture class="cs-background">
+        <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1631193961927-f7f85ed52093?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <source media="(min-width: 601px)" srcset="https://images.unsplash.com/photo-1631193961927-f7f85ed52093?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        <img aria-hidden="true" decoding="async" src="https://images.unsplash.com/photo-1631193961927-f7f85ed52093?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="accountant" width="886" height="842" loading="lazy">
+    </picture>
+</section>
+                                
+                                
+<!-- ============================================ -->
+<!--                  Services                    -->
+<!-- ============================================ -->
+
+<section id="services-2355">
+    <div class="cs-container">
+        <div class="cs-content">
+            <span class="cs-topper">Available Services</span>
+            <h2 class="cs-title">Which Package Suits You?</h2>
+        </div>                  
+        <ul class="cs-card-group">
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-wash-and-leather-768x432.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-wash-and-leather-768x432.webp">
+                        <img loading="lazy" decoding="async" src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-wash-and-leather-768x432.webp" alt="building" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Wash & Leather</h3>
+                    <p class="cs-item-text">
+                        From £22 <span style="font-size: 0.7em;">(inc VAT)</span>
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-exterior-valet-768x432.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-exterior-valet-768x432.webp">
+                        <img loading="lazy" decoding="async" src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-exterior-valet-768x432.webp" alt="building" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Exterior Valet</h3>
+                    <p class="cs-item-text">
+                        From £60 <span style="font-size: 0.7em;">(inc VAT)</span>
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-mini-valet-768x432.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-mini-valet-768x432.webp">
+                        <img loading="lazy" decoding="async" src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-mini-valet-768x432.webp" alt="building" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Mini Valet</h3>
+                    <p class="cs-item-text">
+                        From £42 <span style="font-size: 0.7em;">(inc VAT)</span>
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-mini-valet-and-wax-768x432.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-mini-valet-and-wax-768x432.webp">
+                        <img loading="lazy" decoding="async" src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-mini-valet-and-wax-768x432.webp" alt="building" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Mini Valet & Wax</h3>
+                    <p class="cs-item-text">
+                        From £72 <span style="font-size: 0.7em;">(inc VAT)</span>
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-interior-valet-768x432.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-interior-valet-768x432.webp">
+                        <img loading="lazy" decoding="async" src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-interior-valet-768x432.webp" alt="building" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Interior Valet</h3>
+                    <p class="cs-item-text">
+                        From £78 <span style="font-size: 0.7em;">(inc VAT)</span>
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-full-valet-768x432.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-full-valet-768x432.webp">
+                        <img loading="lazy" decoding="async" src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-full-valet-768x432.webp" alt="building" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Full Valet</h3>
+                    <p class="cs-item-text">
+                        From £126 <span style="font-size: 0.7em;">(inc VAT)</span>
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-engine-clean-768x432.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-engine-clean-768x432.webp">
+                        <img loading="lazy" decoding="async" src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-engine-clean-768x432.webp" alt="building" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Engine Clean</h3>
+                    <p class="cs-item-text">
+                        From £42 <span style="font-size: 0.7em;">(inc VAT)</span>
+                    </p>
+                </a>
+            </li>
+            <li class="cs-item">
+                <a href="" class="cs-link">
+                    <picture class="cs-picture">
+                        <!--Mobile Image-->
+                        <source media="(max-width: 600px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-detailing-and-protection-02-768x432.webp">
+                        <!--Tablet and above Image-->
+                        <source media="(min-width: 601px)" srcset="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-detailing-and-protection-02-768x432.webp">
+                        <img loading="lazy" decoding="async" src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mobile-car-valeting-detailing-and-protection-02-768x432.webp" alt="building" width="305" height="340">
+                    </picture>
+                    <h3 class="cs-h3">Car Detailing & Protection</h3>
+                    <p class="cs-item-text">
+                        From £336 <span style="font-size: 0.7em;">(inc VAT)</span>
+                    </p>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+                                
+<!-- ============================================ -->
+<!--                   Footer                     -->
+<!-- ============================================ -->
+
+<footer id="cs-footer-1862">
+    <div class="cs-container">
+        <!--Top Section-->
+        <div class="cs-top">
+            <div class="cs-flex">
+                <a href="" class="cs-logo">
+                    <img src="https://www.mobilecarvaleting.co.uk/wp-content/uploads/2025/08/mcv-mobile-car-valeting-header-logo.webp.pagespeed.ce.sijBoQa1yG.webp" alt="logo" aria-hidden="true" loading="lazy" decoding="async" width="317" height="49">
+                </a>
+                <ul class="cs-social">
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" rel="noopener" target="_blank" aria-label="">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-facebook.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" rel="noopener" target="_blank" aria-label="">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-linkedin.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" rel="noopener" target="_blank" aria-label="">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/instagram-derm-footer.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        </a>
+                    </li>
+                    <li class="cs-social-li">
+                        <a href="" class="cs-social-link" rel="noopener" target="_blank" aria-label="">
+                            <img class="cs-social-icon cs-default" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Images/Icons/grey-tiktok.svg" alt="icon" loading="lazy" decoding="async" width="24" height="24" aria-hidden="true">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="cs-ul cs-contact-ul">
+                <li class="cs-li">
+                    <span class="cs-header">Contact Info</span>
+                </li>
+                <li class="cs-li">
+                    <a href="" class="cs-link" target="_blank" rel="noopener">
+                        Head Office: MCV House<br />
+                        Unit 1 Martins Court,<br />
+                        Telford Way,<br />
+                        Stephenson Industrial Estate,<br />
+                        Coalville, Leicester.<br />
+                        LE67 3HD
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a style="color: var(--secondary)" href="tel:08007817117" class="cs-link">
+                        <b>Phone:</b> 0800 781 7117
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a style="color: var(--secondary)" href="tel:07860538367" class="cs-link">
+                        <b>Mobile:</b> 07860 538 367
+                    </a>
+                </li>
+                <li class="cs-li">
+                    <a href="mailto:info@mobilecarvaleting.co.uk " class="cs-link">
+                        info@mobilecarvaleting.co.uk
+                    </a>
+                </li>
+            </ul>
+            <ul class="cs-ul">
+                <li class="cs-li">
+                    <span class="cs-header">Office Hours</span>
+                </li>
+                <li class="cs-li">
+                    Weekdays: 8am - 5pm
+                </li>
+                <li class="cs-li">
+                    Saturday: 8am - 1pm
+                </li>
+                <li class="cs-li">
+                    Sunday: Closed
+                </li>
+            </ul>
+        </div>
+        <!--Bottom Section-->
+        <div class="cs-bottom">
+            <!--Navigation-->
+            <ul class="cs-nav">
+                <li class="cs-nav-li">
+                    <a href="" class="cs-nav-link">Home</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a href="" class="cs-nav-link">About</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a href="" class="cs-nav-link">Services</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a href="" class="cs-nav-link">Franchise</a>
+                </li>
+                <li class="cs-nav-li">
+                    <a href="" class="cs-nav-link">FAQ</a>
+                </li>
+            </ul>
+            <span class="cs-copyright">
+                © Copyright 2026 - <a href="" class="cs-copyright-link">Mobile Car Valeting </a> <a class="cs-copyright-link" href=""> / Web Design by LunaBear Web Design</a>
+            </span>
+        </div>
+    </div>
+</footer>
+                                
+
+    <script src="app.js"></script>
+</body>
+</html>
